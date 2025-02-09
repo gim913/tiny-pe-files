@@ -1,5 +1,5 @@
 @IF EXIST target\ (
-  nasm -f bin -o target/cold.exe -l nodd.lst 3.coll-dd/cold.asm
+  nasm -f bin -o target/cold.exe -l cold.lst 3.coll-dd/cold.asm
   IF EXIST target/cold.exe (
     echo compiled cold.exe
   ) ELSE (
