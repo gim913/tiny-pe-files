@@ -155,9 +155,6 @@ title:
 content:
     db 'H',0,'e',0,'l',0,'l',0,'o',0,0,0
 
-; Debug Table
-    times 24 dq 0           ; [UNUSED] Debug Table
-
 ; Entry
 entry:
     mov r9d, MB_TYPE        ; uType

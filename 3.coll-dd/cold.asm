@@ -26,9 +26,12 @@ BITS 64
     dw 0                    ; [UNUSED] e_cblp
     dw 0                    ; [UNUSED] c_cp
     dw 0                    ; [UNUSED] e_crlc
+code:
+
     dw 0                    ; [UNUSED] e_cparhdr
     dw 0                    ; [UNUSED] e_minalloc
     dw 0                    ; [UNUSED] e_maxalloc
+
     dw 0                    ; [UNUSED] e_ss
     dw 0                    ; [UNUSED] e_sp
     dw 0                    ; [UNUSED] e_csum
@@ -65,7 +68,7 @@ opt_hdr:
     dd 0                           ; SizeOfInitializedData
     dd 0                           ; SizeOfUninitializedData
     dd entry                       ; AddressOfEntryPoint
-    dd iatbl                       ; BaseOfCode
+    dd code                        ; BaseOfCode
 
     dq 0x0004_2000_0000            ; ImageBase
     dd 0x10                        ; SectionAlignment
@@ -114,7 +117,6 @@ opt_hdr_size equ $-opt_hdr
 
 hdr_size equ $-$$
 
-code:
 ; Image Thunk Data / Import Address Directory
 iatbl:
     dq symbol
@@ -127,9 +129,6 @@ title:
     db 'H',0,'i',0,0x3d,0xd8,0x4b,0xdc,0,0
 content:
     db 'H',0,'e',0,'l',0,'l',0,'o',0,0,0
-
-; Debug Table
-    times 24 dq 0           ; [UNUSED] Debug Table
 
 ; Entry
 entry:

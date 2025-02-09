@@ -8,6 +8,6 @@ All files were tested on Win11 (23H2 Build 22631.4751).
 
 | dir | description | size |
 | -- | -- | -- |
-| `1.simple` | this one is based on [@ayaka14732/TinyPE-on-Win10](https://github.com/ayaka14732/TinyPE-on-Win10), with MS stub thrown out and message made much smaller. | 736b |
-| `2.drop-dds` | data directories that are not needed are removed | 624b |
-| `3.coll-dd` | collapses import data directory entry onto section name (this is all fine meme goes here) | 608b |
+| `1.simple` | this one is based on [@ayaka14732/TinyPE-on-Win10](https://github.com/ayaka14732/TinyPE-on-Win10), with MS stub thrown out and message made much smaller. | 544b |
+| `2.drop-dds` | data directories that are not needed are removed | 432b |
+| `3.coll-dd` | collapses import data directory entry onto section name (this is all fine meme goes here) | 4168b |
