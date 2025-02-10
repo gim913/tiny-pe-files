@@ -13,3 +13,4 @@ All files were tested on Win11 (23H2 Build 22631.4751).
 | `3.coll-dd` | collapses import data directory entry onto section name (this is all fine meme goes here) | 4168b |
 | `4.strings` | move all necessary strings into mz header | 368b |
 | `5.byeINT` | don't really need OriginalFirstThunk | 352b |
+| `6.rearrange` | rearrange things a bit, split code into gadgets and toss them around free spaces, move iat right behind mz | 338b |

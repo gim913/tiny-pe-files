@@ -3,5 +3,6 @@
 @call 3.coll-dd\build.bat
 @call 4.strings\build.bat
 @call 5.byeINT\build.bat
+@call 6.rearrange\build.bat
 
-dir target
+@rem dir target
